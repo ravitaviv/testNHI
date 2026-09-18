@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fufu NHI Vault — Non-Human Identity Vault</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-veil" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2.5L20 6V11.5C20 16.5 16.9 20.4 12 21.5C7.1 20.4 4 16.5 4 11.5V6L12 2.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M9 12L11 14L15.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Fufu NHI Vault
+      </span>
+      <span class="brand-tagline">Identity security for non-human &amp; AI agent workloads</span>
+    </div>
+    <nav class="nav">
+      <a href="#/dashboard" class="nav-link" data-route="dashboard">Dashboard</a>
+      <a href="#/audit" class="nav-link" data-route="audit">Audit Log</a>
+    </nav>
+    <div class="topbar-actions">
+      <span class="badge badge-proto">Prototype — simulated backend</span>
+      <button type="button" class="btn btn-ghost btn-small" id="resetDemoBtn">Reset Demo Data</button>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="app"></main>
+
+<div id="modalRoot" class="modal-root" aria-live="polite"></div>
+<div id="toastRoot" class="toast-root" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
